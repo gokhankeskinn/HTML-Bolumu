@@ -1,0 +1,87 @@
+<h1 id="top">HTML</h1> <a href="#footer"> Sayfa sonuna git</a>
+<h2>Emmet / Zen Coding</h2>
+<!-- https://youtu.be/S9PuaOocC4M -->
+<!-- ! yazıp Tab tuşuna basınca otomatik html şablonu gelecektir -->
+<!-- 
+    etiket isimlerini direk verebiliyoruz
+    + kardeş öğe
+    > içinde öğe
+    ^ yukarı çık ve öğe oluştur
+    * çarp -> p*3
+    lorem  -> çok uzun yazı. HTML şablonu oluştururken rastgele yazı yazmak için
+    lorem4 -> 4 kelimelik lorem üret
+    . -> class
+    # -> id
+ -->
+
+<!-- h1+p+p+h2+p+p+p+p+p -->
+<!-- h1+p+p+h2+p+p+p+p+p -> h1+p*2+h2+p*4 kısa yolu bu şekilde-->
+<!-- ul>li*5 -->
+<!-- ul>li*3^p*2+h3 -->
+<!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1 -- hatalı -- -->
+<!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -- doğru -- -->
+
+<h3 class="deneme">Lorem.</h3> <!-- h3.deneme>lorem1-->
+<h3 id="denemeid">Lorem.</h3> <!-- h3#denemeid>lorem1-->
+
+<!-- h3.deneme#idolussun>lorem1 -->
+
+<!-- ul>li.deneme
+ul>.deneme
+iki kullanımda aynı sonucu verecektir. ul nin içinde li oluşturacağımızı anlayacaktır. deneme adında classlı li oluşturacaktır.
+
+.deneme yazarsak ne olur. <div class="deneme"></div> classname deneme adında div oluşur.
+-->
+<ul>
+    <li class="text-red3"></li> <!-- ul>li.text-red*3-->
+</ul>
+<ul class="class1">
+    <li class="class2">Lorem.</li> <!-- ul.class1>li.class2>Lorem1 -->
+</ul>
+
+<ul class="class1">                 <!-- ul.class1>li.class2*3>Lorem1 -->
+    <li class="class2">Lorem.</li>
+    <li class="class2">Quisquam.</li>
+    <li class="class2">Error?</li>
+</ul>
+
+
+<!--
+Burada + ve * ifadesinin farkını da daha kolay anlayabiliriz.
+
+Örneğin ul tagının içine aynı id’ye sahip 3 adet li eklemek istiyorsam * ifadesi kullanılabilir.
+
+Fakat amacım farklı id’lere sahip üç adet li tagı oluşturmaksa ul>li#id1+li#id2+li#id3 yapılır.
+
+- Peki otomatik artış sağlayan değerleri tek tek yazmak amacımız zaman tasarrufu iken ne kadar mantıklı?
+
+Emmet bunun için de bir kısa yola sahip :$ ifadesi. Yani yukarda görmüş olduğunuz ul>li#id1+li#id2+li#id3 şeklinde yazdığımız kod bloğunu çok daha basit bir biçimde ul>li#idNo$*3 diyerek yazabiliriz.
+
+Böylece otomatik olarak idNo1, idNo2 ve idNo3 idlerine sahip üç adet li tagımız olur.
+-->
+<ul>
+  <li id="idNo1"></li>
+  <li id="idNo2"></li>
+  <li id="idNo3"></li>
+</ul>
+
+<!-- p>Lorem -->
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nesciunt aliquam eius pariatur doloribus aperiam fuga nihil quibusdam harum facere autem incidunt ducimus eligendi sapiente ex, voluptatibus beatae omnis mollitia.</p>
+
+<!-- p>lorem5 5 kelimelik yazı yazar-->
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!-- 
+    ul tagı altında "item1 ,item2, item3, item4" classlarına sahip 4 adet li tagı oluşturmak istersek aşağıdakilerden hangisini yapmalıyız? 
+
+    ul>li.item$*4
+-->
+
+<!-- 
+    div tagı altında "item" id'sine sahip 10 kelimelik loremleri içeren 6 adet p tagı oluşturmak istersek aşağıdakilerden hangisini yapmalıyız?
+
+        div>p#item*6>lorem10
+ -->
+
+ <a href="#top">Sayfa başına git</a>
+ <h1 id="footer"></h1>
